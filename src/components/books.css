@@ -1,0 +1,135 @@
+.sec_books{
+    /* content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: auto;
+    width: 100%;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+    background-blend-mode: darken;
+    filter: brightness(23%); */
+    background-color: rgb(24, 21, 21);
+    height: auto;
+    /* filter: brightness(23%); */
+    /* background-image: url('./Images/booksbg.jpg'); */
+  
+}
+.single_link{
+    text-decoration: none;
+}
+@media screen and (max-width: 840px) {
+    .sec_books::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 2000px;
+        width: 100%;
+        z-index: -1;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* opacity: 0.8; */
+        background-blend-mode: darken;
+        filter: brightness(23%);
+        background-image: url('./Images/booksbg.jpg');
+      
+    }
+  }
+.book_main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.book_link{
+text-decoration: none;
+color: aliceblue;
+background-color: #800000;
+font-size: 20px;
+border-radius: 8px;
+padding: 10px 20px 12px 20px;
+}
+.book_link:hover{
+    background-color: #a60202;
+}
+@media screen and (max-width: 840px) {
+    .book_link {
+        margin-top: 20px;
+    }
+}
+.fis_main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+.input{
+    width: 280px;
+    height: 13px;
+    padding: 15px;
+    font-size: 20px;
+    border: none;
+}
+.search_btn{
+    color: aliceblue;
+background-color: #800000;
+font-size: 20px;
+border-radius: 3px;
+padding: 10px 20px 12px 20px;
+border: none;
+margin-left: 10px;
+}
+@media screen and (max-width: 840px) {
+    .search_btn {
+        margin-top: 15px;
+    }
+}
+.categ{
+    text-align: center;
+    color: aliceblue;
+    padding: 20px;
+    font-size: 33px;
+}
+.card{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    flex-wrap: wrap;
+   /* background-color: black; */
+}
+.box1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: aliceblue;
+    border: 3px solid  #800000;;
+    height: 400px;
+    transition: transform .2s;
+    /* background-color: black; */
+}
+.box1:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.auth{
+    position: relative;
+    bottom: 30px;
+    font-size: 18px;
+}
+.auths{
+    position: relative;
+    bottom: 60px;
+    font-size: 18px;
+    font-weight: 480;
+}
+.bookimg{
+    height: 280px;
+}

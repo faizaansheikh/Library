@@ -1,0 +1,90 @@
+.navmobile {
+    display: none;
+}
+
+.menu_bar {
+    cursor: pointer;
+}
+
+.nav_menu {
+    background-color: #181d24;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    transition: 350ms;
+}
+
+.nav_menu.active {
+    right: 0;
+    transition: 350ms;
+}
+/* 
+.nav_text {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    height: 60px;
+    padding: 8px 0px 8px 16px;
+} */
+
+.nav_menu_items>a {
+    font-size: 25px;
+    /* letter-spacing: 2px; */
+    /* font-weight: bold; */
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+    color: white;
+    text-decoration: none;
+}
+.set_btn_log{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.left_btn_nav{
+    margin-top: 20px;
+    padding: 8px 13px 8px 13px;
+    font-weight: 400;
+    font-size: 17px;
+    background-color: black;
+    border-radius: 3px;
+    color: aliceblue;
+    border: none;
+}
+.badge_mob{
+    color: aliceblue;
+}
+.nav_menu_items {
+    width: 100%;
+    padding: 0px;
+}
+
+.navbar_toggle {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    cursor: pointer;
+}
+.badge_mob{
+    position: relative;
+    left: 220px;
+    top: 80px;
+    
+}
+.left_icon_mob{
+    font-size: 45px;
+    position: relative;
+    bottom: 20px;
+}
+@media screen and (max-width: 840px) {
+    .navmobile {
+        display: block;
+    }
+}

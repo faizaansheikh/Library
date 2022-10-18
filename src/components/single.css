@@ -1,0 +1,109 @@
+
+.single_main::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 700px;
+    width: 100%;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* opacity: 0.8; */
+    background-blend-mode: darken;
+    filter: brightness(25%);
+    background-image: url('./Images/singlebg.jpg');
+  
+}
+@media screen and (max-width: 840px) {
+    .single_main::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 1100px;
+        width: 100%;
+        z-index: -1;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* opacity: 0.8; */
+        background-blend-mode: darken;
+        filter: brightness(25%);
+        background-image: url('./Images/singlebg.jpg');
+      
+    }
+  }
+.Addto_main{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 70px;
+}
+.eng{
+    font-size: 35px;
+}
+.enp{
+    font-size: 20px;
+}
+.enr{
+    font-size: 29px;
+}
+@media screen and (max-width: 840px) {
+    .eng{
+        font-size: 25px;
+    }
+    .enp{
+        font-size: 15px;
+    }
+    .enr{
+        font-size: 19px;
+    }
+   }
+.bor_btn{
+    font-size: 25px;
+    background-color: #800000;
+    color: antiquewhite;
+    border: none;
+    padding: 10px 15px 10px 15px;
+}
+.bor_btn:hover{
+    background-color: #a10202;
+    cursor: pointer;
+}
+.single_box_one{
+    width: 650px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+@media screen and (max-width: 840px) {
+    .single_box_one{
+        width: 650px;
+        height: 260px;
+        padding: 20px;
+    }
+   }
+.single_box_two{
+    width: 700px;
+    height: 400px;
+    /* background-color: burlywood; */
+    display: flex;
+    color: antiquewhite;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+@media screen and (max-width: 840px) {
+   .single_box_two{
+    padding: 30px;
+   }
+  }
+.sin_img{
+    width: 55%;
+}

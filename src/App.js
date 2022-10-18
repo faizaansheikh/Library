@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import { Routes, Route } from 'react-router-dom';
+import Home from './Screen/Home';
+import Books from './components/Books';
+// import Header from './components/Header'
+import Single from './components/Single';
+import Login from './login/Login';
+import Signup from './Signup/Signup';
+import History from './components/History';
 function App() {
+  const auth = localStorage.getItem('auth')
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/* <Home/> */}
+
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/bookes' element={<Books />} />
+        <Route path='/books/:id' element={<Single />} />
+        <Route path='/history' element={<History />} />
+        <Route path='/login' element={<Login />} />
+        <Route path='/signup' element={<Signup />} />
+
+
+
+
+      </Routes>
+    </>
   );
 }
 
